@@ -48,12 +48,18 @@ html {
 body {
     font-family: 'Roboto';
     background-color: var(--pale-grey);
+    padding: 0 130px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -65,6 +71,14 @@ img {
     height: auto;
 }
 
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    /* color: var(--pale-grey); */
+}
+
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -74,4 +88,87 @@ img {
     font-size: 60px;
     font-weight: 900;
     line-height: 1.08;
+}
+
+
+/* ===========================HEADER=========================== */
+
+.header {
+    position: relative;
+}
+
+.header__wrap {
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    color: var(--pale-grey);
+}
+
+.header__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--pale-grey);
+}
+
+.header__button--active {
+    border: solid 1px var(--white);
+}
+
+/* ========================REVIEW-==================== */
+
+.review {
+    /* background: rgba(0, 0, 0, 0.4); */
+    background: url('img/img-header.jpg') no-repeat center;
+    margin-bottom: 100px;
+}
+
+.review>.container{
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.review__content {
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    margin: 0 200px;
+    padding-top: 172px;
+
+}
+
+.review__heading {
+    color: var(--pale-grey);
+    margin-bottom: 30px;
+}
+
+.review__description {
+    color: var(--pale-grey);
+    margin-bottom: 78px;
+    max-width: 530px;
+}
+
+.review__link {
+    display: inline-block;
+    width: 580px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 25px 0 25px 200px;
+    border-top: solid 1px var(--white);
+    border-right: solid 1px var(--white);
+    color: var(--pale-grey);
+    background-image: url('img/ic-next.svg');
+    background-repeat: no-repeat;
+    background-position: 90%;
 }
