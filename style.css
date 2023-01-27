@@ -76,7 +76,6 @@ button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    /* color: var(--pale-grey); */
 }
 
 .container {
@@ -100,10 +99,13 @@ button {
 .header__wrap {
     padding: 40px;
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__list {
@@ -132,17 +134,12 @@ button {
 /* ========================REVIEW-==================== */
 
 .review {
-    /* background: rgba(0, 0, 0, 0.4); */
     background: url('img/img-header.jpg') no-repeat center;
+    background-size: cover;
     margin-bottom: 100px;
 }
 
-.review>.container{
-    background-color: rgba(0, 0, 0, 0.4); 
-}
-
 .review__content {
-    /* background-color: rgba(0, 0, 0, 0.4); */
     margin: 0 200px;
     padding-top: 172px;
 
@@ -172,3 +169,200 @@ button {
     background-repeat: no-repeat;
     background-position: 90%;
 }
+
+
+/* ===================ABOUT=================== */
+
+.about {
+    padding-top: 90px;
+    background-color: var(--white);
+    margin-bottom: 100px;
+}
+
+.about__container {
+    padding-left: 200px;
+}
+
+.about__title {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.about__descr {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 85px;
+}
+
+.directions {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.direction__item {
+    width: 240px;
+}
+
+.direction__item:not(:last-child) {
+    margin-right: 60px;
+}
+
+.direction__picture {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.direction__picture--first {
+    background-color: #63c9e0;
+}
+
+.direction__picture--second {
+    background-color: #f47e3d;
+}
+
+.direction__picture--third {
+    background-color: #d04b9b;
+}
+
+.direction__img {
+    margin: 0 auto;
+}
+
+.direction__description {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skills__title {
+    color: var(--silver);
+    margin-bottom: 75px;
+}
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__item {
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 40%;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.skills__item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 110%;
+    height: 1px;
+    width: 30px;
+    background-color: var(--dark-sky-blue);
+}
+
+/* ================WORK================= */
+
+.work {
+    margin-bottom: 100px;
+}
+
+.work__title {
+    margin-left: 200px;
+    margin-bottom: 25px;
+}
+
+.work__descr {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.33;
+    padding-left: 200px;
+    margin-bottom: 90px;
+}
+
+.work__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work__content {
+    max-width: 440px;
+}
+
+.work__item {
+    display: inline-block;
+    max-width: 49%;
+}
+
+.work__picture {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.work__title--min {
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.54;
+    letter-spacing: 1.73px;
+    margin-bottom: 39px;
+}
+
+.work__text {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.33;
+}
+
+.work__item:first-child,
+.work__item:last-child {
+    position: relative;
+    margin-bottom: 70px;
+    max-width: 100%;
+}
+
+.work__picture--first {
+    margin: 0;
+}
+
+.work__img--first {
+    object-fit: cover;  
+}
+
+.work__content--first {
+    position: absolute;
+    bottom: 3%;
+    left: 15%;
+    padding: 40px;
+    z-index: 10;
+    max-width: 380px;
+    padding: 40px;  
+    background-color: var(--dark-sky-blue);
+    color: var(--pale-grey);
+}
+
+.work__item:last-child {
+    margin-top: 100px;
+}
+
+.work__content--last {
+    position: absolute;
+    bottom: 10%;
+    left: 51%;
+    padding: 40px;
+    z-index: 10;
+    max-width: 380px;
+    min-height: 380px;
+    padding: 40px;  
+    background-color: var(--pale-grey);
+    color: var(--dark);
+}
+
