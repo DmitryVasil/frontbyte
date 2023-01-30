@@ -96,7 +96,7 @@ button {
     position: relative;
 }
 
-.header__wrap {
+    .header__wrap {
     padding: 40px;
     position: absolute;
     /* width: 100%; */
@@ -104,8 +104,12 @@ button {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+}
+
+.header__logo {
+margin-right: 120px;
 }
 
 .header__list {
@@ -114,10 +118,15 @@ button {
 
 .header__item {
     color: var(--pale-grey);
+    opacity: 0.5;
 }
 
 .header__item:not(:last-child) {
     margin-right: 50px;
+}
+
+.header__languages {
+    margin-left: auto;
 }
 
 .header__button {
@@ -125,6 +134,7 @@ button {
     height: 40px;
     border-radius: 50%;
     color: var(--pale-grey);
+    opacity: .5;
 }
 
 .header__button--active {
@@ -134,15 +144,25 @@ button {
 /* ========================REVIEW-==================== */
 
 .review {
-    background: url('img/img-header.jpg') no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('img/img-header.jpg') no-repeat center;
     background-size: cover;
     margin-bottom: 100px;
 }
 
+/* .review::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+} */
+
 .review__content {
     margin: 0 200px;
     padding-top: 172px;
-
 }
 
 .review__heading {
@@ -151,9 +171,11 @@ button {
 }
 
 .review__description {
+    font-size: 20px;
+    font-weight: 300;
     color: var(--pale-grey);
+    opacity: .5;
     margin-bottom: 78px;
-    max-width: 530px;
 }
 
 .review__link {
@@ -168,6 +190,7 @@ button {
     background-image: url('img/ic-next.svg');
     background-repeat: no-repeat;
     background-position: 90%;
+    opacity: .5;
 }
 
 
@@ -320,6 +343,7 @@ button {
     font-size: 30px;
     font-weight: 300;
     line-height: 1.33;
+    color: var(--dark);
 }
 
 .work__item:first-child,
@@ -472,4 +496,124 @@ button {
     font-size: 15px;
     font-weight: 300;
     color: var(--cool-grey);
+}
+
+/* ===========FOOTER=============== */
+
+.footer {
+    position: relative;
+    padding-top: 100px;
+    /* background: url('img/footer/img-map\ \(1\).svg') no-repeat 90% 75%; */
+    /* background-size: contain; */
+    background-color: #000;
+    z-index: -2;
+}
+
+.footer__maps {
+    position: absolute;
+    /* width: 900px;
+    height: 440px; */
+    top: 23%;
+    left: 23%;
+    z-index: -1;
+}
+
+.footer__maps::before,
+.footer__maps::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.footer__maps::before {
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-sky-blue);
+    top: 17%;
+    left: 46%;
+}
+
+.footer__maps::after {
+    width: 40px;
+    height: 40px;
+    background-color: var(--darkish-pink);
+    top: 25%;
+    left: 56%;
+}
+
+.footer__container {
+    padding-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 10;
+}
+
+.footer__container > * {
+    width: 45%;
+}
+
+.footer__title {
+    display: inline-block;
+    color: var(--pale-grey);
+    /* margin-bottom: 75px; */
+    /* margin-right: 200px; */
+}
+
+.footer__description {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    color: var(--pale-grey);
+    margin-bottom: 90px;
+    max-width: 380px;
+    margin-right: 200px;
+    margin-top: 75px;
+}
+
+.footer__socials {
+    display: inline-block;
+}
+
+.footer__link:not(:last-child) {
+    margin-right: 25px;
+}
+
+.contacts {
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+.contacts:last-child {
+    margin-left: auto;
+}
+
+.contacts__address>* {
+    display: block;
+}
+
+.contacts__address {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.67;
+    color: var(--pale-grey);
+}
+
+
+.review__link--footer {
+    display: inline-block;
+    background-color: var(--dark-sky-blue);
+    border: none;
+    margin-right: 118px;
+    opacity: 1;
+}
+
+.footer__copyright {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--pale-grey);
+    margin-left: auto;
 }
