@@ -97,7 +97,7 @@ button {
 }
 
     .header__wrap {
-    padding: 40px;
+    padding: 40px 60px 40px 40px;
     position: absolute;
     /* width: 100%; */
     top: 0;
@@ -109,7 +109,7 @@ button {
 }
 
 .header__logo {
-margin-right: 120px;
+    margin-right: 120px;
 }
 
 .header__list {
@@ -119,10 +119,17 @@ margin-right: 120px;
 .header__item {
     color: var(--pale-grey);
     opacity: 0.5;
+
 }
 
 .header__item:not(:last-child) {
     margin-right: 50px;
+}
+
+.header__link {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.33;
 }
 
 .header__languages {
@@ -130,11 +137,16 @@ margin-right: 120px;
 }
 
 .header__button {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
+    padding: 11px;
     border-radius: 50%;
     color: var(--pale-grey);
     opacity: .5;
+}
+
+.header__button:not(:last-child) {
+    margin-right: 5px;
 }
 
 .header__button--active {
@@ -166,13 +178,16 @@ margin-right: 120px;
 }
 
 .review__heading {
+    letter-spacing: -0.75px;
     color: var(--pale-grey);
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
 
 .review__description {
+    width: 86%;
     font-size: 20px;
     font-weight: 300;
+    line-height: 1.5;
     color: var(--pale-grey);
     opacity: .5;
     margin-bottom: 78px;
@@ -184,6 +199,7 @@ margin-right: 120px;
     font-size: 20px;
     font-weight: 300;
     padding: 25px 0 25px 200px;
+    line-height: 1.5;
     border-top: solid 1px var(--white);
     border-right: solid 1px var(--white);
     color: var(--pale-grey);
