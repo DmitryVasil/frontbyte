@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/RobotoBlack.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/RobotoBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/RobotoLight.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/RobotoRegular.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/RobotoBlack.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoLight.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Frontbyte</title>
 </head>
 <body>
@@ -18,7 +24,8 @@
             <div class="header__wrap">
                 <a href="#" class="header__logo">
                     <picture class="header__img">
-                        <img src="img/img-logo-desktop-light.svg" alt="">
+                        <source srcset="img/header/img-logo-mobile-light.svg" media="(max-width: 768px)" > 
+                        <img src="img/header/img-logo-desktop-light.svg" alt="Логотип">
                     </picture>
                 </a>
                 <nav class="header__menu">
@@ -31,6 +38,7 @@
                         <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
                     </ul>
                 </nav>
+                <span class="header__burger"></span>
                 <div class="header__languages">
                     <button class="header__button">No</button>
                     <button class="header__button header__button--active">En</button>
@@ -52,7 +60,7 @@
                     </p>
                 </div>
             </div>
-            <a class="review__link">Drop&nbsp;us a&nbsp;line</a>
+            <a class="button">Drop&nbsp;us a&nbsp;line</a>
         </section>
         <section class="about">
             <div class="container about__container">
@@ -62,10 +70,11 @@
                 <p class="about__descr">
                     We&nbsp;have subject domain expertise in&nbsp;various aspects
                 </p>
-                <ul class="directions">
+                <ul class="direction">
                     <li class="direction__item">
                         <picture class="direction__picture direction__picture--first">
-                            <img class="direction__img" src="img/about/about-1.svg" alt="">
+                            <source media="(max-width: 540px)" srcset="img/about/about-mobile-1.svg">
+                            <img class="direction__img" src="img/about/about-1.svg" alt="картинка-1">
                         </picture>
                         <p class="direction__description">
                             Project management for simple and complex projects
@@ -73,7 +82,8 @@
                     </li>
                     <li class="direction__item">
                         <picture class="direction__picture direction__picture--second">
-                            <img class="direction__img" src="img/about/about-2.svg" alt="">
+                            <source media="(max-width: 540px)" srcset="img/about/about-mobile-2.svg">
+                            <img class="direction__img" src="img/about/about-2.svg" alt="картинка-2">
                         </picture>
                         <p class="direction__description">
                             Management for hire
@@ -81,7 +91,8 @@
                     </li>
                     <li class="direction__item">
                         <picture class="direction__picture direction__picture--third">
-                            <img class="direction__img" src="img/about/about-3.svg" alt="">
+                            <source media="(max-width: 540px)" srcset="img/about/about-mobile-3.svg">
+                            <img class="direction__img" src="img/about/about-3.svg" alt="картинка-3">
                         </picture>
                         <p class="direction__description">
                             Digital transformation
@@ -92,12 +103,12 @@
                     <h2 class="title skills__title">What We Do</h2>
                     <ul class="skills__list">
                         <li class="skills__item">Development and support of new and existing software systems</li>
-                        <li class="skills__item">Quality Assurance for new and existing products</li>
                         <li class="skills__item">Deep analytics in various spheres</li>
-                        <li class="skills__item">Data collection, research and analysis</li>
-                        <li class="skills__item">Data collection, research and analysis</li>
-                        <li class="skills__item">Data collection, research and analysis</li>
+                        <li class="skills__item">Insights-driven solutions</li>
                         <li class="skills__item">Agile product engineering</li>
+                        <li class="skills__item">Quality Assurance for new and existing products</li>
+                        <li class="skills__item">Data collection, research and analysis</li>
+                        <li class="skills__item">UX/UI concepts and design</li>
                         <li class="skills__item">Video and motion design</li>
                     </ul>
                 </div>
@@ -110,12 +121,13 @@
                 <ul class="work__list">
                     <li class="work__item work__item--first">
                         <picture class="work__picture work__picture--first">
-                            <img class="work__img work__img--first" src="img/work/work-1.jpg" alt="">
+                            <source  srcset="img/work/work-tab-1.jpg" media="(max-width: 980px)" class="work__img work__img--first">
+                            <img class="work__img work__img--first" src="img/work/work-1.jpg" alt="BIRDIEEYES">
                         </picture>
                         <div class="work__content work__content--first">
-                            <h5 class="work__title--min">
+                            <h4 class="work__title-min">
                                 BIRDIEEYES
-                            </h5>
+                            </h4>
                             <p class="work__text work__text--first">
                                 We&nbsp;have introduced AR technology into one of&nbsp;the most traditional games and made it&nbsp;even more interesting
                             </p>
@@ -123,24 +135,26 @@
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <img class="work__img" src="img/work/work-2.jpg" alt="">
+                            <source media="(max-width: 980px)" srcset="img/work/work-tab-2.jpg" class="work__img">
+                            <img class="work__img" src="img/work/work-2.jpg" alt="UPSPORT">
                         </picture>
                         <div class="work__content">
-                            <h5 class="work__title--min">
+                            <h4 class="work__title-min">
                                 UPSPORT
-                            </h5>
+                            </h4>
                             <p class="work__text">
                                 Live communication platform that has changed the game for sport clubs, parents and their kids</p>
                         </div>
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <img class="work__img" src="img/work/work-3.jpg" alt="">
+                            <source media="(max-width: 980px)" srcset="img/work/work-tab-3.jpg" class="work__img">
+                            <img class="work__img" src="img/work/work-3.jpg" alt="XLAND">
                         </picture>
                         <div class="work__content">
-                            <h5 class="work__title--min">
+                            <h4 class="work__title-min">
                                 XLAND
-                            </h5>
+                            </h4>
                             <p class="work__text">
                                 Digital presence for the first indoor activity park in Norway
                             </p>
@@ -148,24 +162,26 @@
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <img class="work__img" src="img/work/work-4.jpg" alt="">
+                            <source media="(max-width: 980px)" srcset="img/work/work-tab-4.jpg" class="work__img">
+                            <img class="work__img" src="img/work/work-4.jpg" alt="PHONERO">
                         </picture>
                         <div class="work__content">
-                            <h5 class="work__title--min">
+                            <h4 class="work__title-min">
                                 PHONERO
-                            </h5>
+                            </h4>
                             <p class="work__text">
                                 Interfaces for the cloud based switchboard applications as well as various desktop and mobile applications</p>
                         </div>
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <img class="work__img" src="img/work/work-5.jpg" alt="">
+                            <source media="(max-width: 980px)" srcset="img/work/work-tab-5.jpg" class="work__img">
+                            <img class="work__img" src="img/work/work-5.jpg" alt="KONSBERG GROUP">
                         </picture>
                         <div class="work__content">
-                            <h5 class="work__title--min">
+                            <h4 class="work__title-min">
                                 KONSBERG GROUP
-                            </h5>
+                            </h4>
                             <p class="work__text">
                                 Groundbreaking defence and aerospace systems
                             </p>
@@ -173,12 +189,13 @@
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <img class="work__img" src="img/work/work-6.jpg" alt="">
+                            <source media="(max-width: 980px)" srcset="img/work/work-tab-6.jpg" class="work__img">
+                            <img class="work__img" src="img/work/work-6.jpg" alt="OUR TEAM">
                         </picture>
                         <div class="work__content work__content--last">
-                            <h5 class="work__title--min">
+                            <h4 class="work__title-min">
                                 OUR TEAM
-                            </h5>
+                            </h4>
                             <p class="work__text">
                                 We are united by our passion to create unique and efficient digital products
                             </p>
@@ -194,15 +211,15 @@
                 <div class="slider">
                     <div class="slider__slide">
                         <picture class="slider__picture">
-                            <img src="img/inside/slider-picture.jpg" alt="">
+                            <img src="img/inside/slider-picture.jpg" alt="slide-image">
                         </picture>
                         <div class="slider__content">
-                            <h5 class="slider__title">PRESS ABOUT US</h5>
+                            <h4 class="slider__title">PRESS ABOUT US</h4>
                             <p class="slider__description">
                                 AR golf platform BirdieEyes raises $300 million at $2.7 billion valuation
                             </p>
-                            <picture class="slide__logo">
-                                <img src="img/inside/slide-logo-1.svg" alt="">
+                            <picture class="slider__logo">
+                                <img src="img/inside/slide-logo-1.svg" alt="Логотип">
                             </picture>
                             <div class="slider__buttons">
                                 <button id="slide-1" class="slider__button slider__button--active"></button>
@@ -215,19 +232,25 @@
                     </div>
                 </div>
                 <article class="news">
-                    <h5 class="news__title">LATEST NEWS</h5>
+                    <h4 class="news__title">LATEST NEWS</h4>
                     <ul class="news__list">
                         <li class="news__item">
-                            <p class="news__text">How to use email marketing to connect with your users</p>
-                            <time class="news__time">Dec 19, 2018</time>
+                            <a class="news__link" href="">
+                                <p class="news__text">How to use email marketing to connect with your users</p>
+                                <time datetime="2018-12-19 00:00" class="news__time">Dec 19, 2018</time>
+                            </a>
                         </li>
                         <li class="news__item">
-                            <p class="news__text">How to use email marketing to connect with your users</p>
-                            <time class="news__time">Dec 19, 2018</time>
+                            <a class="news__link" href="">
+                                <p class="news__text">How to use email marketing to connect with your users</p>
+                                <time datetime="2018-12-19 00:00" class="news__time">Dec 19, 2018</time>
+                            </a>
                         </li>
                         <li class="news__item">
-                            <p class="news__text">How to use email marketing to connect with your users</p>
-                            <time class="news__time">Dec 19, 2018</time>
+                            <a class="news__link" href="">
+                                <p class="news__text">How to use email marketing to connect with your users</p>
+                                <time datetime="2018-12-19 00:00" class="news__time">Dec 19, 2018</time>
+                            </a>
                         </li>
                     </ul>
                 </article>
@@ -236,32 +259,26 @@
     </main>
     <footer class="footer">
         <picture class="footer__maps">
-            <img src="img/footer/img-map (1).svg" alt="">
+            <source srcset="img/footer/img-map(2).svg" class="footer__map-img" media="(max-width: 980px)">
+            <img class="footer__map-img" src="img/footer/img-map(1).svg" alt="карта">
         </picture>
         <div class="container footer__container">
             <h2 class="title footer__title">Contacts</h2>
             <div class="footer__socials">
-                <a href="" class="footer__link">
-                    <picture class="footer__social">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                            <path fill="#FFF" fill-rule="evenodd" d="M30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15zM15 7c-2.172 0-2.445.01-3.298.048-.852.04-1.433.174-1.942.372a3.917 3.917 0 0 0-1.417.922A3.927 3.927 0 0 0 7.42 9.76c-.198.51-.333 1.09-.372 1.942C7.01 12.555 7 12.827 7 15s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372.854.038 1.126.048 3.299.048s2.444-.01 3.298-.048c.851-.04 1.433-.174 1.942-.372a3.914 3.914 0 0 0 1.417-.923c.445-.445.718-.891.923-1.417.197-.51.332-1.09.372-1.942.038-.853.048-1.125.048-3.298s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.418 3.91 3.91 0 0 0-1.417-.922c-.51-.198-1.092-.333-1.943-.372C17.443 7.01 17.172 7 14.998 7h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.598.28.28.452.547.598.92.11.282.24.705.275 1.486.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485-.145.373-.319.639-.599.919-.28.28-.546.453-.92.598-.28.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.232.036-.78.166-1.203.276-1.485.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                        </svg>
-                    </picture>
-                </a>
-                <a href="" class="footer__link">
-                    <picture class="footer__social">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-                            <path fill="#FFF" fill-rule="evenodd" d="M15 30C6.716 30 0 23.284 0 15 0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15zm2.718-15.015l.275-2.815h-2.35v-1.658c0-.621.389-.767.666-.767H18V7.01L15.67 7c-2.586 0-3.174 2.041-3.174 3.345v1.823H11v2.817h1.496V23h3.146v-8.015h2.076z"/>
-                        </svg>
-                    </picture>
-                </a>
-                <a href="" class="footer__link">
-                    <picture class="footer__social">
+                <a href="#" class="footer__link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                             <path fill="#FFF" fill-rule="evenodd" d="M30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15zm-7 .635c0-2.9-1.586-4.251-3.702-4.251-1.708 0-2.47.918-2.898 1.561v.03h-.021c.006-.01.015-.02.02-.03v-1.34h-3.216c.043.887 0 9.448 0 9.448H16.4v-5.276c0-.284.021-.564.106-.765.233-.565.762-1.15 1.65-1.15 1.165 0 1.628.867 1.628 2.137v5.054H23v-5.418zM9.82 7.053C8.719 7.053 8 7.758 8 8.685c0 .907.698 1.632 1.778 1.632h.02c1.121 0 1.82-.725 1.82-1.632-.022-.927-.699-1.632-1.798-1.632zm-1.63 14h3.215v-9.447H8.191v9.447z"/>
                         </svg>
-                        
-                    </picture>
+                </a>
+                <a href="#" class="footer__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <path fill="#FFF" fill-rule="evenodd" d="M15 30C6.716 30 0 23.284 0 15 0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15zm2.718-15.015l.275-2.815h-2.35v-1.658c0-.621.389-.767.666-.767H18V7.01L15.67 7c-2.586 0-3.174 2.041-3.174 3.345v1.823H11v2.817h1.496V23h3.146v-8.015h2.076z"/>
+                        </svg>
+                </a>
+                <a href="#" class="footer__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <path fill="#FFF" fill-rule="evenodd" d="M30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15zM15 7c-2.172 0-2.445.01-3.298.048-.852.04-1.433.174-1.942.372a3.917 3.917 0 0 0-1.417.922A3.927 3.927 0 0 0 7.42 9.76c-.198.51-.333 1.09-.372 1.942C7.01 12.555 7 12.827 7 15s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372.854.038 1.126.048 3.299.048s2.444-.01 3.298-.048c.851-.04 1.433-.174 1.942-.372a3.914 3.914 0 0 0 1.417-.923c.445-.445.718-.891.923-1.417.197-.51.332-1.09.372-1.942.038-.853.048-1.125.048-3.298s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.418 3.91 3.91 0 0 0-1.417-.922c-.51-.198-1.092-.333-1.943-.372C17.443 7.01 17.172 7 14.998 7h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.598.28.28.452.547.598.92.11.282.24.705.275 1.486.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485-.145.373-.319.639-.599.919-.28.28-.546.453-.92.598-.28.11-.705.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.232.036-.78.166-1.203.276-1.485.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
                 </a>
             </div>
             <p class="footer__description">
@@ -269,25 +286,25 @@
                 Research and development center is located in Belarus.
             </p>
             <div class="contacts">
-                <h3 class="contacts__title"></h3>
+                <h3 class="contacts__title">Norway</h3>
                 <address class="contacts__address">
                     <span class="contacts__text">Kristiansand</span>
                     <span class="contacts__text">Vestre strandgate, 23, 4th and 6th floor N-4611 </span>
                     <a class="contacts__mail" href="https://contact@frontbyte.no">contact@frontbyte.no</a>
-                    <a class="contacts__tel" type="tel" href="+4741636983">+47 416 36 983</a>
+                    <a class="contacts__tel" href="tel:+4741636983">+47 416 36 983</a>
                 </address>
             </div>      
             <div class="contacts">
-                <h3 class="contacts__title"></h3>
+                <h3 class="contacts__title">Belarus</h3>
                 <address class="contacts__address">
                     <span class="contacts__text">Minsk</span>
                     <span class="contacts__text">Dombrovskaya str., 9, оffice 10.2.2</span>
                     <a class="contacts__mail" href="https://contact@frontbyte.no">contact@frontbyte.no</a>
-                    <a class="contacts__tel" type="tel" href="+375291393336">+375 29 1393336</a>
+                    <a class="contacts__tel" href="tel:+375291393336">+375 29 1393336</a>
                 </address>
             </div>
         </div>
-        <a class="review__link review__link--footer">Drop&nbsp;us a&nbsp;line</a>
+        <a class="button button--footer">Drop&nbsp;us a&nbsp;line</a>
         <span class="footer__copyright">© 2008–2018 Frontbyte</span>
     </footer>
 </body>
