@@ -743,7 +743,7 @@ button {
     color: var(--dark-sky-blue);
 }
 
-.button--footer {
+.button--bg {
     display: inline-block;
     background-color: var(--dark-sky-blue);
     border: none;

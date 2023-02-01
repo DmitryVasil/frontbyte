@@ -334,7 +334,79 @@
         margin-right: 20px; 
     }
 
-    .button--footer {
+    .skills__list {
+        column-count: 1;
+        margin-left: 80px;
+    }
+
+    .work__list {
+        flex-wrap: nowrap;
+        justify-content: baseline;
+        flex-direction: column;
+    }
+
+    .work__content {
+        margin-left: 0;
+    }
+
+    .work__content--first {
+        position: static;
+        background-color: transparent;
+        color: var(--dark);
+    }
+
+    .work__text--first {
+        color: var(--dark);
+    }
+
+    .work__content--last {
+        position: static;
+        padding: 0;
+    }
+
+    .work__item {
+        max-width: 100%;
+    }
+
+    .inside__description {
+        font-size: 15px;
+    }
+    
+    .slider__content {
+        position: static;
+    }
+
+    .news {
+        margin-left: 30px;
+    }
+
+    .news__list {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .news__item {
+        max-width: 100%;
+    }
+
+    .news__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding-top: 0;
+    }
+
+    .footer__container {
+        padding: 30px 30px 40px
+    }
+
+
+
+    .button--bg {
         margin-right: 0;
     }
+
+    
 }
