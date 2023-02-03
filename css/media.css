@@ -270,6 +270,10 @@
         margin-right: 5%;
     }
 
+    .footer .button--bg {
+        margin-right: 10px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -362,6 +366,10 @@
     .map__belarus {
         width: 30px;
         height: 30px;
+    }
+
+    .footer .button--bg {
+        margin-bottom: 20px;
     }
 }
 
@@ -606,6 +614,7 @@
         /* width: 110%; */
         margin: 0;
         margin-left: -30px;
+        width: 100vw
         /* padding: 0; */
     }
     

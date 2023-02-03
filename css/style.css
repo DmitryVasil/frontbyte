@@ -389,7 +389,7 @@ button {
 
 .work__img:hover {
     /* object-fit: contain; */
-    transform: scale(1.30);
+    transform: scale(1.1);
 }
 
 .work__title-min {
@@ -410,13 +410,16 @@ button {
     font-weight: 300;
     line-height: 1.33;
     color: #2d2d42;
-    text-decoration: underline;
+    transition: text-shadow .2s;
+    /* text-decoration: underline;
     text-decoration-color: transparent;
-    transition: text-decoration-color .3s;
+    transition: text-decoration-color .3s; */
 }
 
 .work__text:hover {
-    text-decoration-color: #93a4a9;
+    text-shadow: 0px 5px 5px #494d4f;
+
+    /* text-decoration-color: #93a4a9; */
 }
 
 .work__item--first {
@@ -504,17 +507,17 @@ button {
 
 .team__text {
     cursor: pointer;
-    text-decoration: underline;
-    text-decoration-color: transparent;
+    /* text-decoration: underline;
+    text-decoration-color: transparent; */
     font-size: 30px;
     font-weight: 300;
     line-height: 1.33;
     color: #2d2d42;
-    transition: text-decoration-color .3s;
+    transition: text-shadow .3s;
 }
 
 .team__text:hover {
-    text-decoration-color: #93a4a9;
+    text-shadow: 0px 5px 5px #494d4f;
 }
 
 /* =================INSIDE=============== */
@@ -567,13 +570,13 @@ button {
     max-width: 340px;
     margin-bottom: 55px;
     line-height: 1.33;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: text-decoration-color .3s;
+    /* text-decoration: underline; */
+    /* text-decoration-color: transparent; */
+    transition: text-shadow .3s;
 }
 
 .slider__description:hover {
-    text-decoration-color: #93a4a9;
+    text-shadow: 0px 5px 5px #494d4f;
 }
 
 .slider__picture {
@@ -610,7 +613,7 @@ button {
 }
 
 .slider__button:hover {
-    box-shadow: 0 0 3px 3px #c0c6c8;
+    box-shadow: 0 0 5px 5px #c0c6c8;
 }
 
 .slider__button:not(:last-child) {
@@ -645,13 +648,13 @@ button {
     color: #2d2d42;
     margin-bottom: 20px;
     line-height: 1.5;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: text-decoration-color .3s;
+    /* text-decoration: underline;
+    text-decoration-color: transparent; */
+    transition: text-shadow .3s;
 }
 
 .news__link:hover {
-    text-decoration-color: #93a4a9;
+    text-shadow: 0px 5px 5px #494d4f;
 }
 
 .news__time {
