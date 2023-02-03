@@ -439,6 +439,7 @@ button {
 
 .work__picture--first {
     margin: 0;
+    display: block;
 }
 
 .work__img--first {
