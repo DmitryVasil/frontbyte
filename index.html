@@ -5,14 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link rel="preload" href="fonts/Roboto-Black.woff-" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="fonts/Roboto-Bold.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="fonts/Roboto-Light.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="fonts/Roboto-Regular.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/RobotoBlack.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/RobotoLight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/RobotoRegular.woff2" as="font" type="font/woff2" crossorigin>
     
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
@@ -60,7 +55,7 @@
         <section class="review">
             <div class="container">
                 <div class="review__content">
-                    <h1 class="title review__heading">
+                    <h1 class="title title--review">
                         We&nbsp;provide digital services
                         and develop our own products in&nbsp;sports and iHealth industry
                     </h1>
@@ -73,7 +68,7 @@
         </section>
         <section class="about">
             <div class="container about__container">
-                <h2 class="title about__title">
+                <h2 class="title title--about">
                     We&nbsp;combine high level of professionalism and individual approach
                 </h2>
                 <p class="about__descr">
@@ -82,8 +77,7 @@
                 <ul class="direction">
                     <li class="direction__item">
                         <picture class="direction__picture direction__picture--first">
-                            <source media="(max-width: 540px)" srcset="img/about/about-mobile-1.svg">
-                            <img class="direction__img" src="img/about/about-1.svg" alt="картинка-1">
+                            <img class="direction__img" src="img/about/ic-project (2).svg" alt="картинка-1">
                         </picture>
                         <p class="direction__description">
                             Project management for simple and complex projects
@@ -91,8 +85,7 @@
                     </li>
                     <li class="direction__item">
                         <picture class="direction__picture direction__picture--second">
-                            <source media="(max-width: 540px)" srcset="img/about/about-mobile-2.svg">
-                            <img class="direction__img" src="img/about/about-2.svg" alt="картинка-2">
+                            <img class="direction__img" src="img/about/svg-hire.svg" alt="картинка-2">
                         </picture>
                         <p class="direction__description">
                             Management for hire
@@ -100,8 +93,7 @@
                     </li>
                     <li class="direction__item">
                         <picture class="direction__picture direction__picture--third">
-                            <source media="(max-width: 540px)" srcset="img/about/about-mobile-3.svg">
-                            <img class="direction__img" src="img/about/about-3.svg" alt="картинка-3">
+                            <img class="direction__img" src="img/about/ic-digital (2).svg" alt="картинка-3">
                         </picture>
                         <p class="direction__description">
                             Digital transformation
@@ -109,16 +101,16 @@
                     </li>
                 </ul>
                 <div class="skills">
-                    <h2 class="title skills__title">What We Do</h2>
-                    <ul class="skills__list">
-                        <li class="skills__item">Development and support of new and existing software systems</li>
-                        <li class="skills__item">Deep analytics in various spheres</li>
-                        <li class="skills__item">Insights-driven solutions</li>
-                        <li class="skills__item">Agile product engineering</li>
-                        <li class="skills__item">Quality Assurance for new and existing products</li>
-                        <li class="skills__item">Data collection, research and analysis</li>
-                        <li class="skills__item">UX/UI concepts and design</li>
-                        <li class="skills__item">Video and motion design</li>
+                    <h2 class="title skill__title">What We Do</h2>
+                    <ul class="skill__list">
+                        <li class="skill__item">Development and support of new and existing software systems</li>
+                        <li class="skill__item">Deep analytics in various spheres</li>
+                        <li class="skill__item">Insights-driven solutions</li>
+                        <li class="skill__item">Agile product engineering</li>
+                        <li class="skill__item">Quality Assurance for new and existing products</li>
+                        <li class="skill__item">Data collection, research and analysis</li>
+                        <li class="skill__item">UX/UI concepts and design</li>
+                        <li class="skill__item">Video and motion design</li>
                     </ul>
                 </div>
                 <a href="" class="button button--mobile">Services</a>
@@ -126,12 +118,13 @@
         </section>
         <section class="work">
             <div class="container">
-                <h2 class="title work__title">Our Work</h2>
+                <h2 class="title title--work">Our Work</h2>
                 <p class="work__descr">We&nbsp;change the way businesses and industries operate.</p>
                 <ul class="work__list">
                     <li class="work__item work__item--first">
                         <picture class="work__picture work__picture--first">
-                            <source  srcset="img/work/work-tab-1.jpg" media="(max-width: 980px)" class="work__img work__img--first">
+                            <source type="image/webp" media="(max-width: 980px)" srcset="img/work/work-tab-1-webp.webp 1x, img/work/work-tab-1-webp@2x.webp 2x" class="work__img work__img--first">
+                            <source type="image/webp" srcset="img/work/work-1-webp.webp 1x, img/work/work-1-2x-webp.webp 2x" class="work__img work__img--first">
                             <img class="work__img work__img--first" src="img/work/work-1.jpg" alt="BIRDIEEYES">
                         </picture>
                         <div class="work__content work__content--first">
@@ -145,7 +138,8 @@
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <source media="(max-width: 980px)" srcset="img/work/work-tab-2.jpg" class="work__img">
+                            <source type="image/webp" media="(max-width: 980px)" srcset="img/work/work-tab-2-webp.webp" class="work__img">
+                            <source type="image/webp" srcset="img/work/work-2-webp.webp 1x, img/work/work-2-2x-webp.webp 2x" class="work__img work__img--first">
                             <img class="work__img" src="img/work/work-2.jpg" alt="UPSPORT">
                         </picture>
                         <div class="work__content">
@@ -159,7 +153,8 @@
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <source media="(max-width: 980px)" srcset="img/work/work-tab-3.jpg" class="work__img">
+                            <source type="image/webp" media="(max-width: 980px)" srcset="img/work/work-tab-3-webp.webp" class="work__img">
+                            <source type="image/webp" srcset="img/work/work-3-webp.webp 1x, img/work/work-3-2x-webp.webp 2x" class="work__img work__img--first">
                             <img class="work__img" src="img/work/work-3.jpg" alt="XLAND">
                         </picture>
                         <div class="work__content">
@@ -173,7 +168,8 @@
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <source media="(max-width: 980px)" srcset="img/work/work-tab-4.jpg" class="work__img">
+                            <source type="image/webp" media="(max-width: 980px)" srcset="img/work/work-tab-4-webp.webp" class="work__img">
+                            <source type="image/webp" srcset="img/work/work-4-webp.webp 1x, img/work/work-4-2x-webp.webp 2x" class="work__img work__img--first">
                             <img class="work__img" src="img/work/work-4.jpg" alt="PHONERO">
                         </picture>
                         <div class="work__content">
@@ -187,7 +183,8 @@
                     </li>
                     <li class="work__item">
                         <picture class="work__picture">
-                            <source media="(max-width: 980px)" srcset="img/work/work-tab-5.jpg" class="work__img">
+                            <source type="image/webp" media="(max-width: 980px)" srcset="img/work/work-tab-5-webp.webp" class="work__img">
+                            <source type="image/webp" srcset="img/work/work-5-webp.webp 1x, img/work/work-5-2x-webp.webp 2x" class="work__img work__img--first">
                             <img class="work__img" src="img/work/work-5.jpg" alt="KONSBERG GROUP">
                         </picture>
                         <div class="work__content">
@@ -203,7 +200,10 @@
                 <a href="" class="button button--mobile">All Project</a>
                 <article class="team">
                     <picture class="team__picture">
-                        <source media="(max-width: 980px)" srcset="img/work/work-tab-6.jpg" class="work__img">
+                        <source type="image/webp" media="(max-width: 980px)" srcset="img/work/work-tab-6-webp.webp" class="work__img">
+                        <source type="image/webp" srcset="img/work/work-6-webp.webp 1x, img/work/work-6-2x-webp.webp 2x" class="work__img">
+                        <!-- <source media="(max-width: 980px)" srcset="img/work/work-tab-6.jpg" class="work__img">         
+                        <source media="(max-width: 980px)" srcset="img/work/work-tab-6.jpg" class="work__img"> -->
                         <img class="team__img" src="img/work/work-6.jpg" alt="OUR TEAM">
                     </picture>
                     <div class="team__content">
@@ -219,11 +219,12 @@
         </section>
         <section class="inside">
             <div class="container">
-                <h2 class="title inside__title">Inside Frontbyte</h2>
+                <h2 class="title title--inside">Inside Frontbyte</h2>
                 <p class="inside__description">We change the way businesses and industries operate.</p>
                 <div class="slider">
                     <div class="slider__slide">
                         <picture class="slider__picture">
+                            <source srcset="img/inside/slider-picture-webp.webp 1x, img/inside/slider-picture-2x-webp.webp 2x" class="work__img">
                             <img src="img/inside/slider-picture.jpg" alt="slide-image">
                         </picture>
                         <div class="slider__content">
@@ -280,7 +281,7 @@
                 <span class="map__norway"></span>
                 <span class="map__belarus"></span>
             </div>
-            <h2 class="title footer__title">Contacts</h2>
+            <h2 class="title title--footer">Contacts</h2>
             <div class="footer__socials">
                 <a href="#" class="footer__link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
