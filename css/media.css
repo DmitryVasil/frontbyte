@@ -21,7 +21,7 @@
         margin-bottom: 0;
     }
 
-    .review__heading {
+    .title--review {
         padding: 0 100px;
     }
 
@@ -39,17 +39,17 @@
         padding-left: 100px;
     }
 
-    .skills__list {
+    .skill__list {
         margin-left: 0px;
         column-gap: 42px;
     }
     
-    .skills__item {
+    .skill__item {
         margin-bottom: 25px;
         padding-left: 50px;
     }
 
-    .work__title {
+    .title--work {
         margin-left: 100px;
     }
 
@@ -105,7 +105,7 @@
         left: 50%;
     }
 
-    .inside__title,
+    .title--inside,
     .inside__description {
         margin-left: 100px;
     }
@@ -216,8 +216,12 @@
     .about__container {
         padding-right: 50px;
     }
+    
+    .direction__item {
+        margin-right: 20px;
+    }
 
-    .skills__list {
+    .skill__list {
         padding-right: 0;
     }
 
@@ -242,6 +246,11 @@
         font-size: 23px;
     }
     
+    .title--work {
+        margin-left: 30px;
+    }
+
+    
     .slider__content {
         bottom: 3px;
     }
@@ -262,7 +271,7 @@
         height: 290px;
     }
 
-    .footer__title {
+    .title--footer {
         margin-right: 100px;
     }
 
@@ -324,20 +333,47 @@
         background-color: #f4f4f7;
     }
 
+    .direction__item {
+        display: flex;
+        /* justify-content: space-between; */
+        width: 100%;
+        align-items: center;
+        margin-bottom: 60px;
+
+    }
+
+    .direction__picture {
+        /* width: 50px;
+        height: 50px;
+        margin-bottom: 0; */
+        display: inline-block;
+        /* width: 50px;
+        height: 50px; */
+        margin-right: 20px; 
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
     .direction__description {
         font-size: 15px;
     }
 
-    .skills__list {
+    .skill__list {
         margin-left: -50px;
     }
 
-    .skills__item{
+    .skill__item{
         font-size: 15px;
     }
 
     .inside {
         margin-bottom: 30px;
+    }
+
+    .inside__description {
+        font-size: 15px;
+        margin-bottom: 30px;
+        margin-right: 20px;
     }
 
     .work__item {
@@ -369,7 +405,9 @@
     }
 
     .footer .button--bg {
-        margin-bottom: 20px;
+        display: block;
+        width: 500px;
+        /* margin-bottom: 20px; */
     }
 }
 
@@ -391,7 +429,7 @@
         margin: 0 30px;
     }
 
-    .review__heading {
+    .title--review {
         letter-spacing: -0.31px;
         padding: 0;
     }
@@ -447,11 +485,11 @@
         margin-right: 20px; 
     }
 
-    .skills__title {
+    .skill__title {
         margin-bottom: 30px;
     }
 
-    .skills__list {
+    .skill__list {
         column-count: 1;
         margin-left: 0;
         /* margin-left: 80px; */
@@ -534,7 +572,7 @@
         padding-top: 30px;
     }
 
-    .inside__title {
+    .title--inside {
         margin-left: 30px;
     }
 
@@ -609,12 +647,13 @@
         padding-right: 0px;
     }
 
-    .button--bg {
+    .footer .button--bg {
         /* position: absolute; */
         /* width: 110%; */
+        /* display: inline-block; */
         margin: 0;
         margin-left: -30px;
-        width: 100vw
+        width: 100vw;
         /* padding: 0; */
     }
     
