@@ -554,7 +554,7 @@
         display: none;
     }
 
-    .slider__buttons--arrow {
+    .slider__arrows {
         display: flex;
         position: absolute;
         bottom: 80px;
