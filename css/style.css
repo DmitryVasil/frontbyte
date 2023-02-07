@@ -184,8 +184,7 @@ button {
     background-image: url("../img/review/img-header.jpg");
     background-image: -webkit-image-set(url("../img/review/img-header-webp.webp") 1x,
                                         url("../img/review/img-header@2x-webp.webp") 2x);
-    background-image: image-set("../img/review/img-header-webp.webp" 1x,
-                                "..img/review/img-header@2x-webp.webp" 2x);
+    background-image: image-set("../img/review/img-header-webp.webp" 1x, "..img/review/img-header@2x-webp.webp" 2x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -388,6 +387,8 @@ button {
     transform: scale(1.1);
 }
 
+
+
 .work__title-min {
     font-size: 13px;
     font-weight: 900;
@@ -570,6 +571,10 @@ button {
 .slider__picture {
     display: block;
     margin-left: 200px;
+}
+
+.slider__img {
+    display: block;
 }
 
 .slider__logo {
